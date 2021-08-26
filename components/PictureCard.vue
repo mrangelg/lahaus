@@ -3,7 +3,7 @@
     <!-- One image -->
     <div
       v-if="favorite.attributes.real_estate_ids.length === 1"
-      class="w-72 h-48 rounded-xl bg-indigo-200 shadow-md"
+      class="w-72 h-48 rounded-xl shadow-md"
     >
       <img
         class="h-full rounded-xl cursor-pointer object-cover"
@@ -15,8 +15,8 @@
 
     <!-- Two images -->
     <div
-      v-if="favorite.attributes.real_estate_ids.length === 2"
-      class="w-72 h-48 rounded-xl bg-indigo-200 shadow-md relative"
+      v-else-if="favorite.attributes.real_estate_ids.length === 2"
+      class="w-72 h-48 rounded-xl shadow-md relative"
     >
       <div v-for="(property, index) in favorite.properties" :key="property.id">
         <img
@@ -39,12 +39,12 @@
         />
       </div>
     </div>
-    <!-- End two image -->
+    <!-- End two images -->
 
     <!-- More than two images -->
     <div
-      v-if="favorite.attributes.real_estate_ids.length > 2"
-      class="w-72 h-48 rounded-xl bg-indigo-200 shadow-md relative"
+      v-else-if="favorite.attributes.real_estate_ids.length > 2"
+      class="w-72 h-48 rounded-xl shadow-md relative"
     >
       <div
         v-for="(property, index) in favorite.properties.slice(0, 3)"
@@ -81,13 +81,13 @@
         </span>
       </div>
     </div>
-    <!-- End more than two image -->
+    <!-- End more than two images -->
   </div>
 </template>
 <script>
 export default {
   name: 'PictureCard',
-  props: ['favorite'],
+  props: { favorite: Object },
   methods: {
     getClassName(index) {
       const classes = [

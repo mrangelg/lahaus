@@ -1,4 +1,4 @@
-# lahouse
+# lahaus
 
 ## Build Setup
 
