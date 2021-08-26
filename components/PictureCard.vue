@@ -1,8 +1,17 @@
 <template>
   <div>
+    <!-- Default image -->
+    <div
+      v-if="favorite.attributes.real_estate_ids.length === 0"
+      class="w-72 h-48 rounded-xl shadow-md"
+    >
+      <img src="/images/default-card.PNG" alt="Default image" />
+    </div>
+    <!-- End default image -->
+
     <!-- One image -->
     <div
-      v-if="favorite.attributes.real_estate_ids.length === 1"
+      v-else-if="favorite.attributes.real_estate_ids.length === 1"
       class="w-72 h-48 rounded-xl shadow-md"
     >
       <img
