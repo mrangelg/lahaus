@@ -1,7 +1,14 @@
 <template>
   <div>
     <div
-      class="font-semibold text-2xl text-center mt-8 mb-14 md:text-3xl md:my-14"
+      class="
+        font-semibold
+        text-2xl text-center
+        mt-20
+        mb-14
+        md:text-3xl
+        md:mt-28
+      "
     >
       Listas de favoritos
     </div>
