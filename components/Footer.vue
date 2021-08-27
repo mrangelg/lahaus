@@ -23,20 +23,20 @@
         <p>Carrera 35 # 15b - 143</p>
       </div>
     </div>
-    <div class="flex gap-4 mt-12 opacity-80">
-      <div class="w-5 h-5">
+    <div class="flex mt-12 opacity-80">
+      <div class="w-5 h-5 mr-6">
         <a href="#" target="_blank" rel="noopener">
           <img src="/icons/whatsapp.svg" alt="La Haus" />
           <span class="sr-only">Whatsapp La Haus</span>
         </a>
       </div>
-      <div class="w-5 h-5">
+      <div class="w-5 h-5 mr-6">
         <a href="#" target="_blank" rel="noopener">
           <img src="/icons/twitter.svg" alt="La Haus" />
           <span class="sr-only">Twitter La Haus</span>
         </a>
       </div>
-      <div class="w-3 h-3">
+      <div class="w-3 h-3 mr-6">
         <a href="#" target="_blank" rel="noopener">
           <img src="/icons/facebook.svg" alt="La Haus" />
           <span class="sr-only">Facebook La Haus</span>
