@@ -1,8 +1,5 @@
 <template>
-  <div>
-    <Navbar />
-    <FavoritesList />
-  </div>
+  <FavoritesList />
 </template>
 
 <script>

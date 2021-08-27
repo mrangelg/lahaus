@@ -4,12 +4,12 @@
       <img src="icons/bars.svg" alt="La Haus" class="pl-4" />
       <NotificationBubble class="absolute top-3 left-10" />
       <NuxtLink to="/" class="pl-3 5">
-        <img src="logo.svg" alt="La Haus" />
+        <img src="/branding/logo.svg" alt="La Haus" />
       </NuxtLink>
     </div>
     <div class="hidden md:flex justify-between items-center h-full">
       <NuxtLink to="/" class="pl-16">
-        <img src="lahaus.svg" alt="La Haus" />
+        <img src="/branding/lahaus-header.svg" alt="La Haus" />
       </NuxtLink>
       <ul
         class="
