@@ -8,6 +8,8 @@
         mb-14
         md:text-3xl
         md:mt-28
+        text-green-jungle
+        font-silka
       "
     >
       Listas de favoritos
@@ -24,10 +26,12 @@
     >
       <div v-for="favorite of favorites" :key="favorite.id">
         <PictureCard :favorite="favorite" />
-        <div class="font-semibold text-lg mt-5 mb-3">
+        <div
+          class="font-semibold text-lg mt-5 mb-3 text-green-jungle font-silka"
+        >
           {{ favorite.attributes.name }}
         </div>
-        <div class="font-normal text-sm text-gray-400 mb-14">
+        <div class="font-normal text-sm mb-14 text-gray-green font-silka">
           {{
             favorite.attributes.real_estate_ids.length === 1
               ? '1 propiedad guardada'
@@ -35,12 +39,12 @@
           }}
         </div>
       </div>
-      <div class="w-72">
+      <div class="w-card">
         <div
           class="
-            h-48
+            h-card
             rounded-xl
-            bg-indigo-200
+            bg-blue-md bg-opacity-70
             shadow-md
             cursor-pointer
             flex
@@ -50,7 +54,16 @@
         >
           <img src="icons/plus.svg" alt="icon plus" />
         </div>
-        <div class="font-medium text-lg text-center mt-5 text-blue-600 mb-14">
+        <div
+          class="
+            font-semibold
+            text-lg text-center
+            mt-5
+            text-blue-sky
+            mb-14
+            font-silka
+          "
+        >
           Crear una nueva lista
         </div>
       </div>

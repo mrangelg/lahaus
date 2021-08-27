@@ -10,7 +10,16 @@
       <NuxtLink to="/" class="pl-16">
         <img src="lahaus.svg" alt="La Haus" />
       </NuxtLink>
-      <ul class="flex flex-wrap justify-around md:w-2/3 lg:w-1/2">
+      <ul
+        class="
+          flex flex-wrap
+          justify-around
+          md:w-2/3
+          lg:w-1/2
+          text-green-jungle
+          font-silka
+        "
+      >
         <li>
           <NuxtLink to="/" class="flex-1"> Cundinamarca </NuxtLink>
         </li>
